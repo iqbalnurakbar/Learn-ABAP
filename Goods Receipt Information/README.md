@@ -20,11 +20,11 @@ The final table should show:
 - Base Unit of Measure: `MARA-MEINS`
 
 **Create a selection screen** with the following requirements:
-    1. Material Document Number as a range and set default value as '4900000012'.
-    2. Document Year is required.
-    3. Plant is required.
-    4. Material Number as a range.
-    5. Add text-elements for each input field.
+1. Material Document Number as a range and set default value as '4900000012'.
+2. Document Year is required.
+3. Plant is required.
+4. Material Number as a range.
+5. Add text-elements for each input field.
 
 **Check the existence of the material document in `MKPF`.** Display an error message if not found.
 
