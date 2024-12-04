@@ -1,9 +1,9 @@
 *&---------------------------------------------------------------------*
-*& Report ZW1_EXAM_GR_47811
+*& Report ZGR_Iqbal
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT ZW1_EXAM_GR_47811.
+REPORT ZGR_Iqbal.
 TABLES: MKPF, MSEG, MAKT, MARA.
 
 TYPES: BEGIN OF TY_RESULT,
@@ -41,7 +41,7 @@ INITIALIZATION.
 AT SELECTION-SCREEN.
   SELECT COUNT(*)
     FROM MKPF
-    WHERE MBLNR = S_MBLNR.
+    WHERE MBLNR IN S_MBLNR.
   IF SY-SUBRC <> 0.
     MESSAGE |{ GC_MESSAGE1 } FOR { S_MBLNR-LOW }| TYPE 'S' DISPLAY LIKE 'E'.
   ENDIF.
